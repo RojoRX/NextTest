@@ -9,8 +9,8 @@ export default function Home() {
     <Header></Header>
     <br/>
     <br/>
-    <h1 className='text-center h2'>
-      Descubra si su seguridad ha sido comprometida y está <br/> en la base de datos vulnerados
+    <h1 className='text-center h2 text-light'>
+      Descubra si su seguridad ha sido vulnerada y/o está <br/> publicada en Internet
     </h1>
     <br/>  
     <br/>
@@ -24,11 +24,11 @@ export default function Home() {
     <br/>
     <Container>
       <div className="my-4">
-        <h2 className="text-center text-purple">Sobre Enlaces Sospechosos</h2>
+        <h2 className="h3 text-center text-purple text-light">Sobre Enlaces Sospechosos</h2>
         <hr className="my-4" />
       </div>
 
-      <p className="border border-purple rounded text-center p-3">
+      <p className="border border-purple rounded text-center p-3 text-light">
       Si has accedido a un enlace sospechoso en Facebook, podrías 
       estar permitiendo que un software malicioso, también conocido como malware, 
       tome control de tu cuenta. Una vez que el malware tiene acceso a tu cuenta, 
@@ -43,11 +43,13 @@ export default function Home() {
     <br/>
     <Container>
       <div className="my-4">
-        <h2 className="text-center text-purple">Como proteger tu seguridad</h2>
+        <h2 className="h3 text-center text-purple text-light">
+          Como proteger tu seguridad
+          </h2>
         <hr className="my-4" />
       </div>
 
-      <p className="border border-purple rounded text-center p-3">
+      <p className="border border-purple rounded text-center p-3 text-light">
         
       Para protegerte, asegúrate de elegir una combinación segura de letras, números y símbolos. Además,
         evita utilizar información personal como nombres, fechas de nacimiento o datos de contacto en tu contraseña.
