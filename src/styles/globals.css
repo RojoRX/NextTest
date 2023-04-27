@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "~bootstrap/dist/css/bootstrap.min.css";
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +18,32 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(67,87,153);
+  background: radial-gradient(circle, rgba(67,87,153,1) 0%, rgba(20,25,83,1) 0%, rgba(20,25,83,1) 24%, rgba(16,16,46,1) 43%, rgba(14,11,24,1) 100%);
 }
+.min-vh-100 {
+  height: calc(100vh - var(--vh-offset, 0px));
+}
+
+@media (max-width: 767.98px) {
+  .min-vh-100 {
+    height: 100%;
+  }
+
+  :root {
+    --vh-offset: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --vh-offset: 56px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --vh-offset: 64px;
+  }
+}
+
