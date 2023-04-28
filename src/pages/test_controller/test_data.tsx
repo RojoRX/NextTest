@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Alert, Button, FormControl, Container, Row, Col } from 'react-bootstrap';
-import pass_xamples from './pass_examples';
+import pass_xamples from '../../pass_examples';
 
 function DataInput() {
   const [dataText, setDataText] = useState('');
