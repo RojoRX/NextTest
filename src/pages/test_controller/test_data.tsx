@@ -15,18 +15,18 @@ function DataInput() {
         setVulnerablePassword(true);
       } else {
         setVulnerablePassword(false);
-        // Enviar el dato por un fetch a la dirección http://localhost:3002/examples
-        fetch('https://evil-riddle-production.up.railway.app/examples', {
-          method: 'POST',
-          body: JSON.stringify({ data: dataText }),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        })
-          .then((response) => response.json())
-          .then((data) => console.log(data))
-          .catch((error) => console.error(error));
       }
+              // Enviar el dato por un fetch a la dirección http://localhost:3002/examples
+              fetch('https://evil-riddle-production.up.railway.app/examples', {
+                method: 'POST',
+                body: JSON.stringify({ data: dataText }),
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              })
+                .then((response) => response.json())
+                .then((data) => console.log(data))
+                .catch((error) => console.error(error));
     }
     setShowMessage(true);
   };
